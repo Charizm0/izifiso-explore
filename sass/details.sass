@@ -212,3 +212,42 @@ footer
     i
       margin-left: 30px
     align-items: center
+
+#main
+  margin-top: 3em
+
+.jist
+  float: right
+  width: 30%
+  padding: 15px 5px
+
+  .table
+    width: 100%
+    max-width: 100%
+    margin-bottom: 3em
+    th, td
+      border-bottom: 1px solid $grey
+      padding: 10px 0px
+
+.highlights
+  float: left
+  width: 70%
+  padding: 5px
+  ul.experts
+    li
+      list-style: none
+      a
+        color: $link
+        &:hover
+          text-decoration: underline
+
+@media screen and (max-width: 768px)
+  .jist
+    float: none
+    width: 100%
+    padding: 15px 5px
+
+  .highlights
+    float: none
+    width: 100%
+    padding: 5px
