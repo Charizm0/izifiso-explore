@@ -48,18 +48,24 @@ body
       text-decoration: none
 
 #banner
-  background: url("../img/banner.jpg")
+  background: url("../img/wildlife.jpeg")
   background-repeat: no-repeat
   background-size: cover
   width: 100%
   padding: 6.5em 0
   #banner_content
+    position: relative
+    height: 100%
     width: 900px
     max-width: 90%
     margin: 0 auto
     display: flex
     justify-content: center
     align-items: center
+    filter: drop-shadow(8px 8px 10px #000)
+    font-size: 1.5em
+    h1
+      font-size: 3em
 
   #feature_tour
     width: 500px
@@ -229,17 +235,38 @@ footer
       border-bottom: 1px solid $grey
       padding: 10px 0px
 
+    .exp-dp
+      width: 50px 
+
 .highlights
   float: left
   width: 70%
+  height: 300px
+  overflow: hidden
   padding: 5px
-  ul.experts
-    li
-      list-style: none
-      a
-        color: $link
-        &:hover
-          text-decoration: underline
+  margin-bottom: 10px
+
+#hl-more
+  text-align: center
+  padding: 5px
+  cursor: pointer
+  color: $primary
+
+#faq-more
+  text-align: center
+  padding: 5px
+  cursor: pointer
+  color: $primary
+
+
+.faq
+  float: left
+  width: 70%
+  height: 300px
+  overflow: hidden
+  padding: 5px
+  margin-bottom: 10px
+
 
 @media screen and (max-width: 768px)
   .jist

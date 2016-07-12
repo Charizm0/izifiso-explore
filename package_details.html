@@ -5,6 +5,7 @@
     <title>Explore</title>
     <link rel="stylesheet" href="css/details.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </head>
   <body>
 
@@ -23,11 +24,8 @@
 
     <section id="banner" class="clearfix">
       <div id="banner_content">
-        <div id="feature_tour">
-          <img class="lulu" src="img/izifiso-tribal.jpg" alt="tribal dance" />
-        </div>
         <div id="inner_content">
-          <h2>Title of the Tour </h2>
+          <h1>Title of the Tour </h2>
           <p class="description">
             <ul class="details">
               <li><i class="fa fa-map-marker"></i><span id="location">Sundarbans</span></li>
@@ -101,23 +99,37 @@
           <tr>
             <td>Price (Rs) </td><td id = "pricex">1600</td>
           </tr>
+          <tr>
+            <td><h3>Expert</h3><td>
+          </tr>
+          <tr>
+            <td><img src="https://scontent.fmaa1-1.fna.fbcdn.net/v/t1.0-9/10689691_781520908581431_2432810487616438218_n.jpg?oh=1b67c56848747a2f11a65994649cb11c&oe=57F027FA" alt="expert" class="exp-dp" /></td>
+            <td>Subhadeep Sarkar</td>
+          </tr>
 
         </table>
 
   </div>
-  <div class="highlights">
+  <div class="highlights" >
     <h2>Highlights</h2>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    <h2>Experts</h2>
-    <ul class="experts">
-      <li><a href="#">Peedahbus Rakras</a></li>
-      <li><a href="#">Ikaytas Radmujam</a></li>
-      <li><a href="#">Lapog Luap</a></li>
-      <li><a href="#">Boobehem Mala</a></li>
-    </ul>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque corporis voluptatum aspernatur esse nihil illum fugit nam earum voluptatibus obcaecati suscipit in quis praesentium sed placeat, dolorum doloribus, consectetur sapiente.</div>
+    <div>Harum vel esse minima, voluptatum nam, labore consequuntur hic necessitatibus ratione consectetur velit, commodi officiis culpa ullam laudantium veniam neque, provident. Facere, nam. Cupiditate illum ut porro praesentium explicabo maxime!</div>
+    <div>Neque tenetur possimus dolor libero. Iusto officia, dolore fuga quaerat, cumque ullam enim sunt vel voluptates doloremque eum, eos distinctio repellendus similique at illum explicabo corporis? Voluptate sequi, facere veritatis.</div>
+    <div>A repellat sed facere officia tenetur, impedit doloremque voluptatibus consequatur minus quae aut accusamus ab ad quasi nesciunt, voluptatem itaque veniam rerum eveniet earum, sapiente quaerat. Totam voluptatem sed reprehenderit!</div>
+    <div>Numquam voluptate et impedit, facilis iusto officia, perferendis dolor provident. Voluptatibus corporis tempore vero ea, voluptate unde tempora vel quaerat animi qui ducimus ipsam quos maxime, assumenda veritatis, odio distinctio.</div>
+  </div>
+  <div id="hl-more" >Read More</div>
+  <div class="faq">
     <h2>F.A.Q.</h2>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique earum numquam qui esse dolorum! Ut ex, laboriosam earum sequi quas reprehenderit, iste dignissimos fuga eos dolores! Illum amet, ex dolorum.</div>
+    <div>Mollitia dolorem incidunt earum ducimus a temporibus voluptate labore eaque recusandae laboriosam ab illo nesciunt facilis omnis quo consequuntur facere numquam suscipit quos consectetur, ut fugit enim! Vero, quibusdam, reprehenderit!</div>
+    <div>Inventore architecto et quidem fugiat, saepe ut alias consectetur animi, voluptatem praesentium a vel, aut ipsa, unde doloremque perferendis labore natus quis. Architecto a tempora consequuntur. Rem non, ratione modi.</div>
+    <div>Veniam facere eveniet, illum obcaecati laudantium quasi consequatur praesentium quibusdam sequi sapiente corrupti, accusantium vitae odit. Voluptatibus voluptates omnis dolore perspiciatis, nihil officiis pariatur, facilis et nesciunt, esse accusantium quaerat.</div>
+    <div>Nostrum eveniet nulla minima voluptas, eius facere laboriosam laborum cupiditate sed, architecto eos excepturi aut repellat, consectetur repudiandae distinctio? Quasi earum pariatur adipisci incidunt provident nam recusandae soluta accusamus alias.</div>
   </div>
+  <div id="faq-more" >Read More</div>
 </section>
 
 </div>
@@ -141,6 +153,18 @@
       </div>
     </footer>
 
+
+
+<script type="text/javascript">
+  $("#hl-more").click(function(){
+    $(".highlights").css("height", "auto");
+    $("#hl-more").html("");
+  })
+  $("#faq-more").click(function(){
+    $(".faq").css("height", "auto");
+    $("#faq-more").html("");
+  })
+</script>
 
   </body>
 </html>
